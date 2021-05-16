@@ -9,6 +9,15 @@ import ua.cn.stu.ComputerConfigurator.model.Case;
 public interface CaseService {
 
     Case getByName(String name);
+
     Page<Case> getAllByBrand(String brand, Pageable pageable);
+
     Page<Case> getAllByFormFactor(String formFactor, Pageable pageable);
+
+    Case createCase(Case cas);
+
+    void deleteCase(Long id);
+
+    void updateCase(Case cas);
+
 }

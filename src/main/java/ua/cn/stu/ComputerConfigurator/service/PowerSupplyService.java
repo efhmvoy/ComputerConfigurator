@@ -9,8 +9,17 @@ import ua.cn.stu.ComputerConfigurator.model.PowerSupply;
 public interface PowerSupplyService {
 
     PowerSupply getByName(String name);
+
     Page<PowerSupply> getAllByBrand(String brand, Pageable pageable);
+
     Page<PowerSupply> getAllByPower(Integer power, Pageable pageable);
+
     Page<PowerSupply> getAllPowerSupplies(Pageable pageable);
+
+    PowerSupply createPowerSupply(PowerSupply powerSupply);
+
+    void updatePowerSupply(PowerSupply powerSupply);
+
+    void deletePowerSupply(Long id);
 
 }

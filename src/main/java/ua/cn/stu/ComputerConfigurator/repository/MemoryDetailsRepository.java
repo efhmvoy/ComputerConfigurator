@@ -6,4 +6,5 @@ import ua.cn.stu.ComputerConfigurator.model.MemoryDetails;
 
 @Repository
 public interface MemoryDetailsRepository extends JpaRepository<MemoryDetails, Long> {
+
 }

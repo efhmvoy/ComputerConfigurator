@@ -6,16 +6,13 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "images")
+@Table(name = "brands")
 @Data
 @NoArgsConstructor
-public class Image {
-
+public class Brand {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String path;
-
-
+    private String name;
 }
