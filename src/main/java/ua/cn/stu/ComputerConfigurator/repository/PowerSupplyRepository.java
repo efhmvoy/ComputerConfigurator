@@ -6,4 +6,5 @@ import ua.cn.stu.ComputerConfigurator.model.PowerSupply;
 
 @Repository
 public interface PowerSupplyRepository extends JpaRepository<PowerSupply, Long> {
+    PowerSupply findByName (String name);
 }
